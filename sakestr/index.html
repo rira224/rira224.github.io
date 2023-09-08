@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>#Sakestr</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="https://github.com/rira224/NostrStock/blob/dfe895872f7267545193e3cac725c8f5bf3183c4/favicon.svg">
+  <script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
+  <script src="https://github.com/rira224/NostrStock/blob/dfe895872f7267545193e3cac725c8f5bf3183c4/main.js"></script>
+</head>
+<body>
+  <h1>#Sakestr</h1>
+  <input type="text" id="npubInput" placeholder="公開鍵(npub〜)を入力">
+  <button onclick="searchPosts()">検索！</button>
+    <div id="alertarea">
+      <!-- アラート内容-->
+    </div>
+  <ul>
+    <li>公開鍵で指定したアカウントが投稿している「#sakestr」タグつきの投稿を100件まで表示するよ</li>
+    <li>githubは<a href=https://github.com/rira224/NostrStock/>こちら</a></li>
+    <li>リレーは「wss://relay-jp.nostr.wirednet.jp」をみています（つまりこのリレーを追加した後に投稿されたものを取得します）</li>
+    <li>最後のnote~はnoteIDです　多くのクライアントで検索欄に貼り付けるとその投稿に飛べると思います</li>
+    <li>イラストを投稿するときは是非「#sakestr」をつけて投稿しよう！</li>
+    <li>NIP-36(閲覧注意)対応しました！「content-warning！閲覧するにはクリック」と表示されます</li>
+  </ul>
+      
+      <hr>
+      
+      <div id="profContainer">
+          <!--kind0からプロフィール表示-->
+      </div>
+      
+      <hr>
+      
+      <div id="resultContainer">
+          <!-- 検索結果の投稿を表示-->
+      </div>
+
+</body>
+</html>
